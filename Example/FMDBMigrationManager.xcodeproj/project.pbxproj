@@ -61,12 +61,12 @@
 		6837FBF745C329A2768B8EE3 /* Pods-FMDBMigrationManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBMigrationManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-FMDBMigrationManager_Example/Pods-FMDBMigrationManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8AA2D67BD559BCA4A178A1AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8AA2D67BD559BCA4A178A1AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A007B856E96C2B8B010CBB38 /* Pods-FMDBMigrationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBMigrationManager_Example.release.xcconfig"; path = "Target Support Files/Pods-FMDBMigrationManager_Example/Pods-FMDBMigrationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA3435BDD4CCBA6041E0E96B /* Pods-FMDBMigrationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBMigrationManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-FMDBMigrationManager_Tests/Pods-FMDBMigrationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D9ACD9D9AC0F966484A392A3 /* Pods_FMDBMigrationManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMDBMigrationManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF6AC376202801661B6093B1 /* FMDBMigrationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FMDBMigrationManager.podspec; path = ../FMDBMigrationManager.podspec; sourceTree = "<group>"; };
-		E9B6AB5800FBE14455E8D33D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DF6AC376202801661B6093B1 /* FMDBMigrationManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FMDBMigrationManager.podspec; path = ../FMDBMigrationManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E9B6AB5800FBE14455E8D33D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				20C0CC2437F61925CEB7C8F7 /* Pods-FMDBMigrationManager_Tests.debug.xcconfig */,
 				BA3435BDD4CCBA6041E0E96B /* Pods-FMDBMigrationManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FMDBMigrationManager_Example/Pods-FMDBMigrationManager_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/FMDBMigrationManager/FMDBMigrationManager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDBMigrationManager.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

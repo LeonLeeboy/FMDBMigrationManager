@@ -1,0 +1,27 @@
+{
+  "name": "FMDBMigrationManager",
+  "version": "0.1.0",
+  "summary": "FMDBMigrationManager 数据库升级的一个仓库（原作者删除仓库了在GitHub上保留一份）",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/j1103765636@iCloud.com/FMDBMigrationManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "j1103765636@iCloud.com": "li.bing.dev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/j1103765636@iCloud.com/FMDBMigrationManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FMDBMigrationManager/Classes/**/*",
+  "dependencies": {
+    "FMDB": [
+      "~> 2.7.5"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FMDBMigrationManager (0.1.0):
+    - FMDB (~> 2.7.5)
+
+DEPENDENCIES:
+  - FMDBMigrationManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+
+EXTERNAL SOURCES:
+  FMDBMigrationManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FMDBMigrationManager: 67e300c8cff61b3958e1599326cc832334520e39
+
+PODFILE CHECKSUM: 9abef1c621783309df861d6ecf2e7d5e7b677d3d
+
+COCOAPODS: 1.9.3
